@@ -14,7 +14,7 @@ services:
       - phpsock:/var/run
   php:
     container_name: ${PROJECT_NAME}_php
-    image: php:${PHP_VER}
+    build: ./phpfpm
     restart: always
     networks:
       - drupal

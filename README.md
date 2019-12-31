@@ -7,7 +7,8 @@ This is simple develop environment to build Drupal8.
 
 ## Install
 
-1. Quick Setup
+1. Quick Setup  
+
   1. Install composer, docker and docker-compose.
   1. Clone this repo.
   1. Do `./ComposeDrupal.sh`
@@ -17,7 +18,9 @@ This is simple develop environment to build Drupal8.
   ```
   1. Access `localhost:8080`
 
-1. Manual Setup
+
+1. Manual Setup  
+
   1. Install composer, docker and docker-compose.
   1. Clone this repo.
   1. Compose drupal.  
