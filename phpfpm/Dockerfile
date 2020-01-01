@@ -7,8 +7,6 @@ RUN apk add --no-cache freetype libpng libjpeg-turbo freetype-dev libpng-dev lib
     --with-jpeg-dir=/usr/include/ && \
   NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) && \
   docker-php-ext-install -j${NPROC} gd opcache && \
-  echo 'upload_max_filesize = 100M' >> /usr/local/etc/php/conf.d/overrides.ini &&\
-  echo 'post_max_size = 108M' >> /usr/local/etc/php/conf.d/overrides.ini &&\
   echo 'opcache.optimization_level=0x7FFFBBFF' >> /usr/local/etc/php/conf.d/overrides.ini &&\
   echo 'opcache.revalidate_freq=0' >> /usr/local/etc/php/conf.d/overrides.ini &&\
   echo 'opcache.validate_timestamps=1' >> /usr/local/etc/php/conf.d/overrides.ini &&\
