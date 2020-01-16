@@ -1,3 +1,4 @@
-/Drupal
-/mariadb/*
+/drupal
+/mariadb
+phpsock
 .DS_Store
